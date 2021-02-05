@@ -1,4 +1,4 @@
-# AdiChallengePrivate
+# AdiChallenge
 
 Adidas iOS Engineer Coding Assignment.
 
