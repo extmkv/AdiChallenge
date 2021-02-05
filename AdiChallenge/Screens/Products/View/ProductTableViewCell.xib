@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="AdiChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adidas_logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Zh-Gk-DFe">
+                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="1Zq-Oj-JdM"/>
+                            <constraint firstAttribute="height" constant="100" id="tXW-ot-vDX"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Gd-kR-bcn">
+                        <rect key="frame" x="120" y="10" width="211" height="74"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yXP-u8-lcj">
+                                <rect key="frame" x="0.0" y="0.0" width="211" height="33.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVo-cZ-3wI">
+                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-ce-Rr5">
+                                        <rect key="frame" x="169.5" y="6.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuY-yA-Izj">
+                                <rect key="frame" x="0.0" y="53.5" width="211" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Gd-kR-bcn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5MR-Ff-oq4"/>
+                    <constraint firstAttribute="bottom" secondItem="1Zh-Gk-DFe" secondAttribute="bottom" constant="10" id="6a4-KI-Hcd"/>
+                    <constraint firstItem="0Gd-kR-bcn" firstAttribute="leading" secondItem="1Zh-Gk-DFe" secondAttribute="trailing" constant="10" id="CF7-UN-rR4"/>
+                    <constraint firstItem="1Zh-Gk-DFe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EA9-Zr-JeQ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0Gd-kR-bcn" secondAttribute="bottom" constant="10" id="HZ2-gz-4GU"/>
+                    <constraint firstItem="1Zh-Gk-DFe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="b7Y-Iy-NeU"/>
+                    <constraint firstAttribute="trailing" secondItem="0Gd-kR-bcn" secondAttribute="trailing" constant="10" id="t8b-o8-L8d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="priceLabel" destination="GbV-ce-Rr5" id="ztp-0t-9PD"/>
+                <outlet property="productImageView" destination="1Zh-Gk-DFe" id="MYL-hD-jSy"/>
+                <outlet property="subtitleLabel" destination="WuY-yA-Izj" id="JJR-fl-BR9"/>
+                <outlet property="titleLabel" destination="zVo-cZ-3wI" id="c2W-4v-QvE"/>
+            </connections>
+            <point key="canvasLocation" x="147.10144927536234" y="154.01785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="adidas_logo" width="100" height="100"/>
+    </resources>
+</document>

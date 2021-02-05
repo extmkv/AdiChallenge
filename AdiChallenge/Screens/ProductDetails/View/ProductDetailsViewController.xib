@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailsViewController" customModule="AdiChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="cL8-gJ-ESR" id="gI1-7i-3DY"/>
+                <outlet property="descriptionLabel" destination="jXi-pS-xzq" id="hDh-vj-cg4"/>
+                <outlet property="imageView" destination="eMd-tC-p00" id="iB3-h1-kEd"/>
+                <outlet property="nameLabel" destination="VXg-cY-gSR" id="zFI-Nx-e5q"/>
+                <outlet property="priceLabel" destination="Tz8-VU-7ye" id="xSZ-8g-6RO"/>
+                <outlet property="tableView" destination="cz6-4B-j1E" id="h1C-kY-twN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adidas_logo" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-tC-p00">
+                    <rect key="frame" x="103.5" y="64" width="207" height="207"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eMd-tC-p00" secondAttribute="height" multiplier="1:1" id="zsM-Jc-gJ5"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-g1-v2u">
+                    <rect key="frame" x="20" y="311" width="374" height="48.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-Pl-p1r">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-cY-gSR">
+                                    <rect key="frame" x="0.0" y="0.0" width="322.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz8-VU-7ye">
+                                    <rect key="frame" x="332.5" y="0.0" width="41.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-pS-xzq">
+                            <rect key="frame" x="0.0" y="30.5" width="374" height="18"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cz6-4B-j1E">
+                    <rect key="frame" x="20" y="466" width="374" height="416"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OH7-3W-NKw"/>
+                        <outlet property="delegate" destination="-1" id="R57-gr-51P"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-gJ-ESR">
+                    <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-Bn-HhZ">
+                    <rect key="frame" x="20" y="399.5" width="374" height="26.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eMd-tC-p00" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5GO-Zq-bwK"/>
+                <constraint firstItem="5iK-Bn-HhZ" firstAttribute="top" secondItem="N8e-g1-v2u" secondAttribute="bottom" constant="40" id="6zV-qf-cKS"/>
+                <constraint firstItem="eMd-tC-p00" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="8Br-vS-X4u"/>
+                <constraint firstItem="N8e-g1-v2u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9cj-m9-DQL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N8e-g1-v2u" secondAttribute="trailing" constant="20" id="ACJ-dP-LZG"/>
+                <constraint firstItem="eMd-tC-p00" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="DxD-VG-9h0"/>
+                <constraint firstItem="cz6-4B-j1E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wfq-M0-IY3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5iK-Bn-HhZ" secondAttribute="trailing" constant="20" id="YYh-3T-dFT"/>
+                <constraint firstItem="cL8-gJ-ESR" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="aJ1-6n-BbR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cz6-4B-j1E" secondAttribute="trailing" constant="20" id="abm-s3-blX"/>
+                <constraint firstItem="N8e-g1-v2u" firstAttribute="top" secondItem="eMd-tC-p00" secondAttribute="bottom" constant="40" id="b2f-Cl-FJ9"/>
+                <constraint firstItem="5iK-Bn-HhZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="e6z-DL-afl"/>
+                <constraint firstItem="cL8-gJ-ESR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jr4-eD-rF9"/>
+                <constraint firstItem="cz6-4B-j1E" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="20" id="tdk-7k-PA1"/>
+                <constraint firstItem="cz6-4B-j1E" firstAttribute="top" secondItem="5iK-Bn-HhZ" secondAttribute="bottom" constant="40" id="vrE-yK-npc"/>
+            </constraints>
+            <point key="canvasLocation" x="-323.1884057971015" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="adidas_logo" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
